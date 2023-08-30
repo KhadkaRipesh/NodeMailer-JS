@@ -21,7 +21,7 @@ async function sendMail() {
       service: 'gmail',
       auth: {
         type: 'OAuth2',
-        user: config.user, // Sender's email address
+        user: 'superduber83@gmail.com', // Sender's email address
         clientId: config.clientId,
         clientSecret: config.clientSecret,
         refreshToken: config.refrest_token,
@@ -31,7 +31,7 @@ async function sendMail() {
 
     // Define the email options
     const mailOptions = {
-      to: 'john.example.com', // Recipient's email address
+      to: 'khadkanripesh@gmail.com', // Recipient's email address
       subject: 'Test Email', // Email subject
       text: 'This is a test email sent using Nodemailer.', // Email text
     };
